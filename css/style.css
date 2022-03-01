@@ -1,0 +1,182 @@
+/* &display:swap; */
+@import "null.css";
+@import url("https://fonts.googleapis.com/css?family=Lato:regular,700,900&display:swap;");
+/* ================================================================ */
+/* ================================================================ */
+body {
+	font-family: "Lato", sans-serif;
+	background-color: #eee;
+}
+
+.wrapper {
+	position: relative;
+	min-height: 100%;
+	overflow: hidden;
+	background: url("../img/bg.jpg") center / cover no-repeat;
+}
+/* ================================================================ */
+.main {
+}
+[class*="image"] {
+	display: inline-block;
+	position: absolute;
+	top: 0;
+	/* left: 0; */
+	max-width: 100px;
+	max-height: 100px;
+}
+* img {
+	width: 100%;
+	height: 100%;
+}
+.image-1 {
+	top: 14%;
+	left: -110%;
+	animation: fly1 1.5s ease forwards;
+}
+@keyframes fly1 {
+	0% {
+		left: -110%;
+	}
+	100% {
+		left: 0%;
+	}
+}
+.image-2 {
+	top: 28%;
+	left: 500%;
+	animation: fly2 1.5s ease 0.5s forwards;
+}
+@keyframes fly2 {
+	0% {
+		left: 500%;
+	}
+	100% {
+		left: 0%;
+	}
+}
+.image-3 {
+	top: 42.5%;
+	left: -110%;
+	animation: fly3 1.5s ease 1s forwards;
+}
+@keyframes fly3 {
+	0% {
+		left: -110%;
+	}
+	100% {
+		left: 0%;
+	}
+}
+.image-4 {
+	top: 57%;
+	left: 500%;
+	animation: fly4 1.5s ease 1.5s forwards;
+}
+@keyframes fly4 {
+	0% {
+		left: 500%;
+	}
+	100% {
+		left: 0%;
+	}
+}
+.image-5 {
+	top: -110%;
+	left: 24%;
+	z-index: 1;
+	animation: fly5 1.5s ease 2.5s forwards, fly5special 1s ease 4s forwards;
+}
+@keyframes fly5 {
+	0% {
+		top: -110%;
+	}
+	100% {
+		top: 35%;
+	}
+}
+@keyframes fly5special {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(-90deg);
+	}
+}
+.image-6 {
+	top: 300%;
+	left: 59%;
+	animation: fly6 1.5s ease 2.5s forwards, fly6special 1s ease 4s forwards;
+}
+@keyframes fly6 {
+	0% {
+		top: 300%;
+	}
+	100% {
+		top: 35%;
+	}
+}
+@keyframes fly6special {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(90deg);
+	}
+}
+.image-7 {
+	top: 300%;
+	right: 300%;
+	animation: fly7 1.5s ease 5s forwards;
+}
+@keyframes fly7 {
+	0% {
+		top: 300%;
+		right: 300%;
+	}
+	100% {
+		top: 14%;
+		right: 0;
+	}
+}
+.image-8 {
+	top: -110%;
+	right: 0%;
+	animation: fly8 1.5s ease 5.5s forwards;
+}
+@keyframes fly8 {
+	0% {
+		top: -110%;
+	}
+	100% {
+		top: 28%;
+	}
+}
+.image-9 {
+	top: 300%;
+	right: 0%;
+	animation: fly9 1.5s ease 5.5s forwards;
+}
+@keyframes fly9 {
+	0% {
+		top: 300%;
+	}
+	100% {
+		top: 42.5%;
+	}
+}
+.image-10 {
+	top: -110%;
+	right: 300%;
+	animation: fly10 1.5s ease 5s forwards;
+}
+@keyframes fly10 {
+	0% {
+		top: -110%;
+		right: 300%;
+	}
+	100% {
+		top: 57%;
+		right: 0;
+	}
+}
